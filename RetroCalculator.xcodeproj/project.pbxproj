@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8C5B64731E95A8E7004DFAB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B64721E95A8E7004DFAB4 /* AppDelegate.swift */; };
-		8C5B64751E95A8E7004DFAB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B64741E95A8E7004DFAB4 /* ViewController.swift */; };
+		8C5B64751E95A8E7004DFAB4 /* CalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5B64741E95A8E7004DFAB4 /* CalcVC.swift */; };
 		8C5B64781E95A8E7004DFAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64761E95A8E7004DFAB4 /* Main.storyboard */; };
-		8C5B647A1E95A8E7004DFAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */; };
 		8C5B647D1E95A8E7004DFAB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B647B1E95A8E7004DFAB4 /* LaunchScreen.storyboard */; };
+		8C5B64851E95FC07004DFAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */; };
+		8C5B64871E95FC8B004DFAB4 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C5B646F1E95A8E7004DFAB4 /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5B64721E95A8E7004DFAB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C5B64741E95A8E7004DFAB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C5B64741E95A8E7004DFAB4 /* CalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcVC.swift; sourceTree = "<group>"; };
 		8C5B64771E95A8E7004DFAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C5B647C1E95A8E7004DFAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C5B647E1E95A8E7004DFAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		8C5B64711E95A8E7004DFAB4 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				8C5B64721E95A8E7004DFAB4 /* AppDelegate.swift */,
-				8C5B64741E95A8E7004DFAB4 /* ViewController.swift */,
-				8C5B64761E95A8E7004DFAB4 /* Main.storyboard */,
-				8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */,
-				8C5B647B1E95A8E7004DFAB4 /* LaunchScreen.storyboard */,
-				8C5B647E1E95A8E7004DFAB4 /* Info.plist */,
+				8C5B64891E95FCEB004DFAB4 /* View */,
+				8C5B648A1E95FCF3004DFAB4 /* Controller */,
+				8C5B64881E95FCD8004DFAB4 /* Resources */,
 			);
 			path = RetroCalculator;
+			sourceTree = "<group>";
+		};
+		8C5B64881E95FCD8004DFAB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */,
+				8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */,
+				8C5B647E1E95A8E7004DFAB4 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8C5B64891E95FCEB004DFAB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B64761E95A8E7004DFAB4 /* Main.storyboard */,
+				8C5B647B1E95A8E7004DFAB4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8C5B648A1E95FCF3004DFAB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C5B64721E95A8E7004DFAB4 /* AppDelegate.swift */,
+				8C5B64741E95A8E7004DFAB4 /* CalcVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5B647D1E95A8E7004DFAB4 /* LaunchScreen.storyboard in Resources */,
-				8C5B647A1E95A8E7004DFAB4 /* Assets.xcassets in Resources */,
+				8C5B64851E95FC07004DFAB4 /* Assets.xcassets in Resources */,
+				8C5B64871E95FC8B004DFAB4 /* Minecraft.ttf in Resources */,
 				8C5B64781E95A8E7004DFAB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5B64751E95A8E7004DFAB4 /* ViewController.swift in Sources */,
+				8C5B64751E95A8E7004DFAB4 /* CalcVC.swift in Sources */,
 				8C5B64731E95A8E7004DFAB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
