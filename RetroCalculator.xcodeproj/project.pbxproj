@@ -13,6 +13,7 @@
 		8C5B647D1E95A8E7004DFAB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B647B1E95A8E7004DFAB4 /* LaunchScreen.storyboard */; };
 		8C5B64851E95FC07004DFAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */; };
 		8C5B64871E95FC8B004DFAB4 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */; };
+		8C5B648C1E960E22004DFAB4 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B648B1E960E22004DFAB4 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8C5B647C1E95A8E7004DFAB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C5B647E1E95A8E7004DFAB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		8C5B648B1E960E22004DFAB4 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		8C5B64881E95FCD8004DFAB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C5B648B1E960E22004DFAB4 /* btn.wav */,
 				8C5B64791E95A8E7004DFAB4 /* Assets.xcassets */,
 				8C5B64861E95FC8B004DFAB4 /* Minecraft.ttf */,
 				8C5B647E1E95A8E7004DFAB4 /* Info.plist */,
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5B648C1E960E22004DFAB4 /* btn.wav in Resources */,
 				8C5B647D1E95A8E7004DFAB4 /* LaunchScreen.storyboard in Resources */,
 				8C5B64851E95FC07004DFAB4 /* Assets.xcassets in Resources */,
 				8C5B64871E95FC8B004DFAB4 /* Minecraft.ttf in Resources */,
