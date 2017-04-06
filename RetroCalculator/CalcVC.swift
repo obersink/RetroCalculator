@@ -28,7 +28,7 @@ class CalcVC: UIViewController {
     var leftValStr = ""
     var rightValStr = ""
     var result = ""
-    var didEqualPressed = false
+    var reset = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class CalcVC: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
-        if didEqualPressed {
+        if reset {
             leftValStr = ""
             rightValStr = ""
         }
@@ -77,9 +77,12 @@ class CalcVC: UIViewController {
     
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
-        didEqualPressed = true
+        reset = true
     }
-
+    
+    @IBAction func onClearPressed(sender: AnyObject) {
+        resetCalc()
+    }
     
     func playSound() {
         if btnSound.isPlaying {
@@ -91,7 +94,7 @@ class CalcVC: UIViewController {
     func processOperation(operation: Operation) {
         playSound()
         
-        didEqualPressed = false
+        reset = false
         
         if currentOperation != Operation.Empty && !leftValStr.isEmpty {
             
@@ -121,6 +124,14 @@ class CalcVC: UIViewController {
             currentOperation = operation
             print( currentOperation )
         }
+    }
+    
+    func resetCalc() {
+        runningNumber = ""
+        outputLbl.text = "0"
+        leftValStr = ""
+        rightValStr = ""
+        //reset = true
     }
 }
 
